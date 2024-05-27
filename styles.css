@@ -1,0 +1,148 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+}
+
+/* Background image and overlay styles in index.html*/
+.background {
+    background: url('image2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.cafe-name {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+header nav {
+    background-color: #855432c3; /* Brown background for the navigation pane */
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); /* Full height minus header height */
+}
+
+.login-container, .signUp-container {
+    background: url('image3.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form h1 {
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #A0522D;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .cafe-name {
+        font-size: 2em;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
